@@ -1,12 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PAYSANDU!</title>
 </head>
-<body>
+
+<body id="body">
+
+    <button id="DlMode">Modo Escuro</button>
 
     <h1>Exercício 3</h1>
 
@@ -15,26 +19,60 @@
     <input type="text" id="texto">
     <br><br>
     <button id="mudar">Mudar</button>
-    
-    <h1 id="titulo">Mbbapé confirmado no Real Madrid</h1>
 
-    <br><br>
+    <h1 id="titulo">Mbbapé confirmado no Real Madrid</h1>
 
     <h1>Ecercício 4</h1>
 
-    <img id="gf" width="20%" src="https://w7.pngwing.com/pngs/610/581/png-transparent-dipper-pines-gravity-falls-journal-3-mabel-pines-character-drawing-mabel-gravity-falls-hat-hand-toddler.png" alt="">
+    <img id="gf" width="20%" src="https://pbs.twimg.com/media/EnxDN7tXIAsO4RK.jpg" alt="">
     <br>
-    <h3 id="gfText"></h3>
-
-    <br><br>
+    <h3 id="gfText">Ei, Vem aqui!</h3>
 
     <h1 id="sorvete">Exercício 5</h1>
 
-    <label for="sorveteText"></label>
+    <label for="sorveteText">Qual é seu sabor favorito de sorvete?</label>
     <br>
     <input type="text" id="sorveteText">
     <br><br>
+    <button id="sorveteBtn">Responder</button>
+    <br>
     <p id="sorveteResposta"></p>
+
+
+    <fieldset style="width: max-content;">
+
+        <legend><h1>Exercício 7</h1></legend>
+
+        <form>
+
+            <fieldset style="width: max-content;">
+                <legend style="font-weight: bold;">Nome</legend>
+                <input type="text" placeholder="Insira o nome" id="name">
+            </fieldset>
+
+            <br>
+
+            <fieldset style="width: max-content;">
+                <legend style="font-weight: bold;">Senha</legend>
+                <input type="password" placeholder="Insira a senha" id="senha">
+            </fieldset>
+
+            <br>
+
+            <fieldset style="width: max-content;">
+                <legend style="font-weight: bold;">Confirmar senha</legend>
+                <input type="password" id="senhaConf" placeholder="Confirme a senha">
+            </fieldset>
+
+            <br>
+
+            <input type="reset" hidden id="reset">
+        </form>
+        <button id="submit">Enviar</button>
+    </fieldset>
+
+    <p id="msgErro" style="color: red; font-size: 18px; font-weight: bold;"></p>
+    <p id="msgSucesso" style="color: green; font-size: 18px; font-weight: bold;"></p>
 
 
 
@@ -42,4 +80,5 @@
     <script src="script.js"></script>
 
 </body>
+
 </html>
