@@ -86,36 +86,38 @@ var texto = document.getElementById('texto');
 
 
 
-    var enviar = document.getElementById('submit');
-
-    enviar.onclick = function(){
+    function enviar(){
 
     var name = document.getElementById('name').value;
     var senha = document.getElementById('senha').value;
     var senhaConf = document.getElementById('senhaConf').value;
     var msgErro = document.getElementById('msgErro');
-    var msgSucesso = document.getElementById('msgSucesso');
-    var reset = document.getElementById('reset');
 
     if(!name){
         msgErro.textContent = 'Preencha o nome.';
+        return false;
     }
     else if(!senha){
         msgErro.textContent = 'Preencha a senha.';
+        return false;
     }
     else if(senha.length < 8){
         msgErro.textContent = 'A senha não pode ter menos que 8 caracteres.';
+        return false;
     }
     else if(!senhaConf){
         msgErro.textContent = 'Confirme a senha.';
+        return false;
     }
     else if(senha != senhaConf){
-        msgErro.textContent = 'As senhas devem ser idênticas.'
+        msgErro.textContent = 'As senhas devem ser idênticas.';
+        return false;
     } 
     else{
-    msgSucesso.textContent = 'Cadastro realizado com sucesso!';
     msgErro.textContent = '';
-    reset.click();
+    alert('Cadastro realizado com sucesso!');
+    return true;
+
 }
 }
 

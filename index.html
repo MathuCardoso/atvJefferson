@@ -12,19 +12,23 @@
 
     <button id="DlMode">Modo Escuro</button>
 
-    <h1>Exercício 3</h1>
+    <fieldset style="width: max-content;">
+        <legend>
+            <h1>Exercício 3</h1>
+        </legend>
 
-    <label for="texto">Mude o título aqui</label>
-    <br>
-    <input type="text" id="texto">
-    <br><br>
-    <button id="mudar">Mudar</button>
+        <label for="texto">Mude o título aqui</label>
+        <br>
+        <input type="text" id="texto">
+        <br><br>
+        <button id="mudar">Mudar</button>
 
-    <h1 id="titulo">Mbbapé confirmado no Real Madrid</h1>
+        <h1 id="titulo">Mbbapé confirmado no Real Madrid</h1>
+    </fieldset>
 
     <h1>Ecercício 4</h1>
 
-    <img id="gf" width="20%" src="https://pbs.twimg.com/media/EnxDN7tXIAsO4RK.jpg" alt="">
+    <img id="gf" width="20%" src="https://pbs.twimg.com/media/EnxDN7tXIAsO4RK.jpg">
     <br>
     <h3 id="gfText">Ei, Vem aqui!</h3>
 
@@ -41,9 +45,11 @@
 
     <fieldset style="width: max-content;">
 
-        <legend><h1>Exercício 7</h1></legend>
+        <legend>
+            <h1>Exercício 7</h1>
+        </legend>
 
-        <form>
+        <form onsubmit="return enviar();">
 
             <fieldset style="width: max-content;">
                 <legend style="font-weight: bold;">Nome</legend>
@@ -65,16 +71,13 @@
             </fieldset>
 
             <br>
-
-            <input type="reset" hidden id="reset">
+            <button id="submit">Enviar</button>
         </form>
-        <button id="submit">Enviar</button>
     </fieldset>
 
     <p id="msgErro" style="color: red; font-size: 18px; font-weight: bold;"></p>
-    <p id="msgSucesso" style="color: green; font-size: 18px; font-weight: bold;"></p>
 
-
+    <br><br>
 
 
     <script src="script.js"></script>
